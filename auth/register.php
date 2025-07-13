@@ -1,6 +1,6 @@
 <?php
-    include './assets/config/connectDB.php';
-    include './assets/others/checkpass.php';
+    include '../assets/config/connectDB.php';
+    include '../assets/others/checkpass.php';
     $isDark = false;
     if(isset($_COOKIE['isDark'])){
         $isDark = $_COOKIE['isDark'];
@@ -63,8 +63,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create your account</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
 </head>
 
 <body class= <?php if($isDark) echo "'dark'"; else echo "'light'"; ?> >

@@ -1,5 +1,5 @@
 <?php
-    include './assets/config/connectDB.php';
+    include '../assets/config/connectDB.php';
     $isDark = false;
     if(isset($_COOKIE['isDark'])){
         $isDark = $_COOKIE['isDark'];
@@ -33,8 +33,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in to your account</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
 </head>
 
 <body class= <?php if($isDark) echo "'dark'"; else echo "'light'"; ?> >
@@ -46,8 +46,8 @@
                 <input type='password' name='password' id='password' class='inp-light' placeholder='Password' required>
             </div>
             <div class='options'>
-                <p>Don't have an account? <a class='an-light' href='..assets/utils/register.php'>Sign up</a></p>
-                <a class='an-light' href='./reset.html'>Reset Password</a>
+                <p>Don't have an account? <a class='an-light' href='register.php'>Sign up</a></p>
+                <a class='an-light' href='../assets/utils/reset.html'>Reset Password</a>
             </div>
             <button class='btn-light submit-btns' type='submit'>Log in</button>
         </form>

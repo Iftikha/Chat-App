@@ -118,7 +118,7 @@ else
         <div class="info">
             <p class="info-name"><?= $username ?><a onclick="toggleModal('<?= $username; ?>')" class="edit-btn-user"><img src="assets/images/icons/edit-icon.png" alt=""></a></p>
             <p class="info-email"><?= $email ?></p>
-            <a href="reset.php"><button class="btn-light submit-btns reset-cta-btn">Reset Password</button></a>
+            <a href="./assets/utils/reset.php"><button class="btn-light submit-btns reset-cta-btn">Reset Password</button></a>
             <a href="index.php"><button class="btn-light submit-btns reset-cta-btn">Cancel</button></a>
         </div>
     </main>

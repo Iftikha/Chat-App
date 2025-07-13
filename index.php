@@ -62,9 +62,9 @@ $result = $conn->query($sql);
                     <a class="an-light menu-item"
                         href="profile.php?username=<?php echo $_COOKIE['name']; ?>">Profile</a>
                     <hr>
-                    <a class="an-light menu-item" href="setting.php">Setting</a>
+                    <a class="an-light menu-item" href="./assets/utils/setting.php">Setting</a>
                     <hr>
-                    <a class="an-light menu-item" href="logout.php">Log out</a>
+                    <a class="an-light menu-item" href="./auth/logout.php">Log out</a>
                 </div>
             </div>
         </nav>
