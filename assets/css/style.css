@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+}
+/* Design Styling */
+.login-signup{
+    width: 350px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+h2{
+    margin-bottom: 15px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.submit-btns{
+    border: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 2px;
+    cursor: pointer;
+}
+.warning{
+    color: red;
+}
+
+.small-btns{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.left{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    /* width: 7%; */
+    position: relative;
+}
+header{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.menu{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 50%;
+    left: -50%;
+    width: 75px;
+    display: flex;
+    flex-direction: column;
+}
+.hidden{
+    display: none;
+}
+.menu-item{
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+hr{
+    border: none;
+    width: 90%;
+    height: 1px;
+    border-radius: 1px;
+    filter: opacity(50%);
+    margin: 0 auto;
+}
+
+.contact{
+    /* width: 40%; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 10px;
+}
+.rightContact{
+    width: 85%;
+}
+.leftContact{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.leftContact img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contactName{
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.msg-contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 10px; */
+    font-size: 12px;
+}
+
+.contact-divider{
+    width: 90%;
+}
+.Contacts{
+    /* background-color: red; */
+    max-height: 80vh;
+    height: 100vh;
+    width: 35%;
+    margin: 20px auto;
+    overflow-y: scroll;
+}
+.chat-Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+.chat-body{
+    width: 35%;
+    height: 95vh;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.username{
+    width: 75%;
+    /* font-size: 18px; */
+}
+.msgs{
+    height: 75%;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.msg{
+    width: fit-content;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-weight: 400;
+    display: inline-block;
+    clear: both;
+}
+.rec{
+    float: left;
+    text-align: left;
+    border-top-left-radius: 0px;
+}
+.sent{
+    float: right;
+    text-align: right;
+    border-top-right-radius: 0px;
+}
+.heading-profile{
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.profile{
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.pfp-my{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    /* object-fit: cover; */
+    
+}
+
+.pfp-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+}
+
+.info-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-email{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.edit-btn{
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
+.fileSelector {
+  display: none;
+}
+
+.file-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 200px;
+  height: 100px;
+  margin: 10px;
+}
+
+
+
+.file-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.file-btn:hover img {
+  opacity: 1;
+}
+
+.form{
+    width: 100%;
+}
+
+.changePfpForm{
+    /* width: 50%;
+    height: 40%; */
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+}
+#changeUsernameForm .buttons{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    margin: 10px 0;
+    gap: 10px
+}
+.buttons{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    margin: 0 10px;
+    gap: 10px
+}
+.header{
+    text-align: center;
+    padding: 10px;
+}
+.form form{
+    margin: 0 auto;
+}
+
+.reset-cta-btn{
+    margin-top: 10px;
+}
+
+.edit-btn-user img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.edit-btn-user{
+    margin: 0 10px ;
+}
+
+@media (max-width: 900px) {
+    .Contacts{
+        width: 50%;
+    }
+    .chat-body{
+        width: 50%;
+    }
+    .Contacts{
+        width: 50%;
+    }
+    
+}
+@media (max-width: 768px) {
+    .Contacts{
+        width: 60%;
+    }
+    .chat-body{
+        width: 60%;
+    }
+    .Contacts{
+        width: 60%;
+    }
+    
+}
+@media (max-width: 600px) {
+    .Contacts{
+        width: 80%;
+    }
+    .chat-body{
+        width: 80%;
+    }
+    .Contacts{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 450px){
+    /* h1, h2, h3, h4, h5, h6, p{
+        font-size: 1.0em;
+    } */
+    .Contacts{
+        width: 100%;
+    }
+    .chat-body{
+        width: 100%;
+    }
+    .Contacts{
+        width: 100%;
+    }
+}
+.small-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sender{
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+
+.text-msg{
+    width:95%;
+    margin: 5px auto;
+    background-color: transparent;
+}
+
+.send-btn{
+    position: absolute;
+    bottom: 50%;
+    right: 2%;
+    transform: translateY(50%);
+}
+

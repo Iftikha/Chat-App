@@ -1,0 +1,15 @@
+# Ignore DB config;
+assets/config/connectDB.php
+
+# Ignore user uploaded data;
+assets/images/uploads/others
+assets/images/uploads/pfp/*.jpg
+assets/images/uploads/pfp/*.png
+assets/images/uploads/pfp/*.jpeg
+assets/images/uploads/pfp/*.gif
+
+
+# Ignore system junk files;
+*.log
+.DS_Store
+Thumbs.DB
