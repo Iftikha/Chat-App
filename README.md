@@ -73,7 +73,7 @@ Start Apache and MySQL from XAMPP Control Panel
 Go to your browser and open:
 
 ```bash
-http://localhost/your-folder-name/
+http://localhost/Chat-App/
 ```
 Sign up, log in, and start chatting!
 
