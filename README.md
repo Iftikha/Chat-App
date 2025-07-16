@@ -21,21 +21,20 @@ A simple real-time-like chat application built with **PHP, MySQL, HTML, CSS, and
 
 ```plaintext
 C:/xampp/htdocs/
+```
 ### 2. Create config Folder
 Inside the main project directory, create a new folder named:
 
-plaintext
-Copy
-Edit
+```plaintext
 config
+```
 Now inside the config folder:
 
-📁 connectDB.php
+``📁 connectDB.php``
 Create a function named connectDB()
 
 This function should return a MySQLi connection object
-
-📁 checkpass.php
+``📁 checkpass.php``
 Create a function named checkpass($password)
 
 This function should return password strength (like true/false or 1/0)
@@ -45,44 +44,40 @@ Open phpMyAdmin:
 
 Create a new database:
 
-sql
-Copy
-Edit
+```sql
 Database Name: chat-app
+```
 Now create the following tables:
 
-🧑 users Table
-sql
-Copy
-Edit
+### 🧑 users Table
+```sql
 CREATE TABLE `users` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `username` VARCHAR(100) NOT NULL,
   `email` VARCHAR(150) NOT NULL,
   `password` VARCHAR(255) NOT NULL
 );
-💬 messages Table
-sql
-Copy
-Edit
+```
+### 💬 messages Table
+```sql
 CREATE TABLE `messages` (
   `id` INT AUTO_INCREMENT PRIMARY KEY,
   `sender` VARCHAR(100) NOT NULL,
   `reciever` VARCHAR(100) NOT NULL,
   `msg` TEXT NOT NULL
 );
-🚀 Running the App
+```
+### 🚀 Running the App
 Start Apache and MySQL from XAMPP Control Panel
 
 Go to your browser and open:
 
-bash
-Copy
-Edit
+```bash
 http://localhost/your-folder-name/
+```
 Sign up, log in, and start chatting!
 
-⚠️ Notes
+### ⚠️ Notes
 Passwords should ideally be hashed using password_hash()
 
 connectDB.php and checkpass.php are essential for secure connection and password checking
@@ -92,10 +87,8 @@ Use sessions or cookies to manage user state
 Chat data is stored in MySQL, fetched via PHP + AJAX
 
 📁 File Structure Overview (Partial)
-plaintext
-Copy
-Edit
-/your-folder-name
+```plaintext
+/Chat-App
 │
 ├── config/
 │   ├── connectDB.php
@@ -110,5 +103,6 @@ Edit
 ├── index.php
 ├── chat.php
 └── README.md
+```
 # 🛡️ License
 MIT / GNU General Public License v3 (as per your choice)
